@@ -13,6 +13,16 @@ Learning-based path planning for a mobile robot. A **convolutional neural networ
 - **RL planner.** A reinforcement learning agent learns to navigate the same grids.
 - **Comparison.** The two approaches are compared on the same maps and the better model is selected.
 
+## Results
+
+| | CNN | Reinforcement learning (Q-learning) |
+|---|---|---|
+| **Accuracy** | 100% | 70% |
+| **Training time** | Very long (a couple of hours, depending on input size) | No separate training dataset needed |
+| **Planning time** | Very fast (about 0.2 s) | Long, but converges for small mazes |
+| **Strengths** | Fast and efficient for the cases it was trained on | No labelled dataset required; generalizes well |
+| **Weaknesses** | Not versatile; needs labelled training data; computationally expensive | Can get stuck in local optima |
+
 ## Skills and tools
 
 `Python` · `Keras / TensorFlow` · `CNN` · `Reinforcement learning` · `A* search` · `Path planning` · `Occupancy grids`
